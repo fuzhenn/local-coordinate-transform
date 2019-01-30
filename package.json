@@ -1,8 +1,8 @@
 {
-  "name": "local-coords-transform",
+  "name": "local-coordinate-transform",
   "version": "0.1.0",
   "description": "transform local coordinates to wgs84 or vice versa",
-  "main": "dist/local-coords-transform.js",
+  "main": "dist/local-coordinate-transform.js",
   "module": "src/index.js",
   "jsnext:main": "src/index.js",
   "scripts": {
@@ -12,15 +12,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/fuzhenn/local-coords-transform.git"
+    "url": "https://github.com/fuzhenn/local-coordinate-transform.git"
   },
   "bugs": {
-    "url": "https://github.com/fuzhenn/local-coords-transform/issues"
+    "url": "https://github.com/fuzhenn/local-coordinate-transform/issues"
   },
-  "homepage": "https://github.com/fuzhenn/local-coords-transform",
+  "homepage": "https://github.com/fuzhenn/local-coordinate-transform",
   "files": [
     "src",
-    "dist/local-coords-transform.js"
+    "dist/local-coordinate-transform.js"
   ],
   "keywords": [],
   "author": "fuzhenn",

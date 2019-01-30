@@ -1,6 +1,6 @@
 # Local Coordinate Transform
 
-[![NPM Version](https://img.shields.io/npm/v/local-coords-transform.svg)](https://github.com/fuzhenn/local-coords-transform) [![CircleCI](https://circleci.com/gh/fuzhenn/local-coords-transform.svg?style=shield)](https://circleci.com/gh/fuzhenn/local-coords-transform)
+[![NPM Version](https://img.shields.io/npm/v/local-coordinate-transform.svg)](https://github.com/fuzhenn/local-coordinate-transform) [![CircleCI](https://circleci.com/gh/fuzhenn/local-coordinate-transform.svg?style=shield)](https://circleci.com/gh/fuzhenn/local-coordinate-transform)
 
 A lib based on least square to convert 2d coordinate to wgs84 coordinate and vice versa.
 
@@ -10,11 +10,11 @@ A lib based on least square to convert 2d coordinate to wgs84 coordinate and vic
 
 ### npm
 ```shell
-npm i local-coords-transform --save
+npm i local-coordinate-transform --save
 ```
 
 ```js
-import lct from 'local-coords-transform';
+import lct from 'local-coordinate-transform';
 
 //sample control points
 //控制点样本数据
@@ -48,7 +48,7 @@ const wgs84 = transform.fromLocal([ -7961.222764147446, -9289.597782096651 ]);
 
 ### Browser
 ```html
-<script src="https://cdn.jsdelivr.net/npm/local-coords-transform/dist/local-coords-transform.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/local-coordinate-transform/dist/local-coordinate-transform.js"></script>
 
 <script>
 const transform = lct(localSamples, wgs84Samples);
