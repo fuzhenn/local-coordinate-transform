@@ -1,0 +1,39 @@
+{
+  "name": "local-coords-transform",
+  "version": "0.1.0",
+  "description": "transform local coordinates to wgs84 or vice versa",
+  "main": "dist/local-coords-transform.js",
+  "module": "src/index.js",
+  "jsnext:main": "src/index.js",
+  "scripts": {
+    "build": "rollup -c rollup.config.js",
+    "test": "mocha -r esm test/specs.js",
+    "prepublish": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/fuzhenn/local-coords-transform.git"
+  },
+  "bugs": {
+    "url": "https://github.com/fuzhenn/local-coords-transform/issues"
+  },
+  "homepage": "https://github.com/fuzhenn/local-coords-transform",
+  "files": [
+    "src",
+    "dist/local-coords-transform.js"
+  ],
+  "keywords": [],
+  "author": "fuzhenn",
+  "license": "MIT",
+  "dependencies": {
+    "least-squares": "^0.0.2"
+  },
+  "devDependencies": {
+    "esm": "^3.0.74",
+    "mocha": "^5.2.0",
+    "rollup": "^1.0.0",
+    "rollup-plugin-uglify": "^6.0.0",
+    "rollup-plugin-commonjs": "^9.2.0",
+    "rollup-plugin-node-resolve": "^4.0.0"
+  }
+}
