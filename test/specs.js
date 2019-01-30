@@ -48,6 +48,20 @@ describe('coordinate transform specs', function () {
         assert.ok(approx(result[0], -7961.222764147446, delta), result[0]);
         assert.ok(approx(result[1], -9289.597782096651, delta), result[1]);
     });
+
+    it('#fromLocal with object', function () {
+        var result = transform.fromLocal([], { x : -7961.222764147446, y : -9289.597782096651 });
+        var delta = 1E-5;
+        assert.ok(approx(result[0], 121.38365648516356, delta));
+        assert.ok(approx(result[1], 31.15163789378666, delta));
+    });
+
+    it('#toLocal with object', function () {
+        var result = transform.toLocal([], { x : 121.38365648516356, y : 31.15163789378666 });
+        var delta = 0.5;
+        assert.ok(approx(result[0], -7961.222764147446, delta), result[0]);
+        assert.ok(approx(result[1], -9289.597782096651, delta), result[1]);
+    });
 });
 
 function approx(a, b, delta) {
