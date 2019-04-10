@@ -38,8 +38,8 @@ program
 
 const file = program.file;
 const encoding = program.encoding || 'utf-8';
-const columnx = program.columnx;
-const columny = program.columny;
+const columnx = +program.columnx;
+const columny = +program.columny;
 
 const input = fs.readFileSync(file, { encoding });
 parse(input, {
@@ -49,9 +49,9 @@ parse(input, {
     const x = +csv[i][columnx];
     const y = +csv[i][columny];
     if (isNaN(x) || isNaN(y)) {
-      csv[i].splice(columny, 0, ['','']);
+      csv[i].splice(columny + 1, 0, ['','']);
     } else {
-      csv[i].splice(columny, 0, transform.fromLocal([], [x, y]));
+      csv[i].splice(columny + 1, 0, transform.fromLocal([], [x, y]));
     }
     output[i] = csv[i];
   }
