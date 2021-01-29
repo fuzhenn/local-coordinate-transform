@@ -41,9 +41,10 @@ const wgs84Samples = [ [ 121.37488150121452, 31.15430386446369 ],
 [ 121.38365648516356, 31.15163789378666 ] ];
 
 const transform = lct(localSamples, wgs84Samples);
-
-const local = transform.toLocal([ 121.38365648516356, 31.15163789378666 ]);
-const wgs84 = transform.fromLocal([ -7961.222764147446, -9289.597782096651 ]);
+//第一个参数是用来接收结果的数组，第二个参数是本地坐标值
+const local = transform.toLocal([],[ 121.38365648516356, 31.15163789378666 ]);
+//第一个参数是用来接收结果的数组，第二个参数是84坐标值
+const wgs84 = transform.fromLocal([],[ -7961.222764147446, -9289.597782096651 ]);
 ```
 
 ### Browser
