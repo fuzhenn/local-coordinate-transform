@@ -1,6 +1,6 @@
 {
   "name": "local-coordinate-transform",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "transform local coordinates to wgs84 or vice versa",
   "main": "dist/local-coordinate-transform.js",
   "module": "src/index.js",
